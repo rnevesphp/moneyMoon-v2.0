@@ -1,44 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoneyMoon V2.0.1</title>
 
     <link rel="stylesheet" href="./front/index.css">
+    <link rel="stylesheet" href="./front/materialize-src-v1.0.0(1)/css/materialize.css">
 </head>
-<body>
-    <main >
-        
-        <div class="container df-col div-center ">
 
-            <div class="titulo ">
-                <h1>MoneyMoon</h1>
+<body>
+    <main class="valign-wrapper row">
+
+        <div class="container row">
+
+            <div class="titulo col s12 row">
+                <h1 class="col s12 m6 l6">Moneymoon</h1>
             </div>
 
-            <div class="login df-col div-center ">
-                
-                <form class="df-col  div-center">
+            <div class="login row  ">
 
-                    <div class="dados-login  df-col">
-                        <label for="name">
+                <form class="col s12 m12 l12">
+
+                    <div class="dados-login col s12 ">
+                        <label class="col s12 m6 l7" for="name">
                             Usuario
                         </label>
-                        <input type="text" name="name" id="name" required>
+                        <input class="col s12 m6 l6"  type="text" name="name" id="name" required>
                     </div>
 
-                    <div class="dados-login df-col">
-                        <label for="pswd">
+                    <div class="dados-login col s12">
+                        <label class="col s12 m6 l7" for="pswd">
                             Senha
                         </label>
-                        <input type="password" name="pswd" id="pswd" required>
+                        <input class="col s12 m6 l6" type="password" name="pswd" id="pswd" required>
                     </div>
 
                 </form>
 
             </div>
-        </div>
+            
+            <div class="dados-login col s12 ">
+                <div class="col s12">
+                    <button class="btn" function="verifyUser();">Acesse Agora</button>
+                </div>
+            </div>
 
+        </div>
     </main>
+
+
+
 </body>
+<script src="./front/materialize-src-v1.0.0(1)/js/materialize.js"></script>
+<script src="./front/main.js"></script>
+
 </html>
