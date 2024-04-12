@@ -1,9 +1,25 @@
-require('dotenv').config(); 
-const { MongoClient , ObjectId } = require('mongodb')
-
 const express  = require("express");
+const cors = require('cors');
 
-const server = express(); 
-server.use(express.json());
+const app = express(); 
+app.use(express.json());
 
-// mongoDB credenciales
+const user = require('./ROUTES/user.controller.js')
+
+app.listen(3000); 
+
+
+
+
+
+app.use('/usuario' , user); 
+
+
+
+
+
+app.get('/' , (req , res) => {
+    res.send(
+        'Hola mundo...'
+    )
+})

@@ -4,11 +4,14 @@
   "description": "Criando o sistema de finanças para controle de vida financeira com multiplas contas bancárias, multiplas moedas e multiplos cartões",
   "main": "index.js",
   "scripts": {
+    "dev": "node --watch --no-warnings index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "theUncoder - Romeu Neves",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "mongodb": "^6.5.0"

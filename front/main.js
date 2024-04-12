@@ -1,5 +1,5 @@
 
-import userController from './controllers/usuario.controller.js';
+import userController from './controllers/user.config.js';
 
 var web
 let webTitle = document.title
@@ -7,7 +7,7 @@ let webTitle = document.title
 window.onload =  () => {
     this.dispatchEvent(new CustomEvent('changeWebTitle'));
     if (document.readyState == "complete") {
-        web = new userController();
+        web = new userController;
     }
 }
 
